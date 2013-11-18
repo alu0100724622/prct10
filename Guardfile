@@ -10,3 +10,8 @@ guard 'rspec', :version => 2 do
   watch('spec/spec_helper.rb')  { "spec" }
 end
 
+guard 'test', :version => 2 do
+  watch(%r{^test/.+\.rb$})
+  watch(%r{^lib/(.+)\.rb$})     { |m| "test/#{m[1]}.rb" }
+
+end
