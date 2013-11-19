@@ -170,7 +170,7 @@ attr_accessor :matrix, :fil, :col						# define una variable matrix, fil, col y 
 	
 	def minimo
 		
-		min = 0
+		min = @matrix[0][0]
 		
 		i = 0								
 		
@@ -203,7 +203,7 @@ attr_accessor :matrix, :fil, :col						# define una variable matrix, fil, col y 
 	
 	def maximo
 		
-		max = 0
+		max = @matrix[0][0]
 		
 		i = 0								
 		
@@ -327,7 +327,7 @@ class Dispersa < Matriz
 	
 	def minimo
 		
-		min = 0
+		min = @eleM[0]
 		
 		i = 0
 		
@@ -351,7 +351,7 @@ class Dispersa < Matriz
 	
 	def maximo
 		
-		max = 0
+		max = @eleM[0]
 		
 		i = 0
 		
@@ -465,3 +465,4 @@ class Dispersa < Matriz
 
 end
 end
+
