@@ -327,7 +327,7 @@ class Dispersa < Matriz
 	
 	def minimo
 		
-		min = @eleM[0]
+		min = 0
 		
 		i = 0
 		
@@ -351,7 +351,7 @@ class Dispersa < Matriz
 	
 	def maximo
 		
-		max = @eleM[0]
+		max = 0
 		
 		i = 0
 		
